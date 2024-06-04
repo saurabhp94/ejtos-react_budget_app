@@ -1,0 +1,44 @@
+.currency-container {
+    background-color: #99CD7C;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .currency-select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    padding-right: 30px; /* Add some padding to make space for the arrow */
+  }
+  
+  .currency-select option {
+    background-color: #F2F2F2;
+    color: #333333;
+    padding: 10px;
+  }
+  
+  .currency-select option:checked {
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .currency-select option:checked::before {
+    content: '✓ '; /* Add a tick mark before the selected option */
+    margin-right: 5px; /* Add some spacing between the tick mark and the text */
+  }
+  
+  .currency-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Disable pointer events on the arrow */
+  }
